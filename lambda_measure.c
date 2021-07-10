@@ -6,7 +6,7 @@ void Calculate_Lambda_Dominant()
            triangle_out, distance_divider, d_min, distance_d[D_SIZE]= {0};
 
     x2 = colorimetry_xy1931[0];
-	y2 = colorimetry_xy1931[1];
+    y2 = colorimetry_xy1931[1];
 
     triangle_p1 = (((x2 - x34_dominant[0])*(y34_dominant[0] - y1) + (y2 - y34_dominant[0])*(x1 - x34_dominant[0]))>0) ? 1 : -1;
     triangle_p2 = (((x2-x1)*(y1 - y34_dominant[D_SIZE-1])+(y2-y1)*(x34_dominant[D_SIZE-1]-x1))>0) ? 1 : -1;
